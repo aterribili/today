@@ -1,6 +1,6 @@
-## Interactive Development
+# Interactive Development
 
-###Copy and paste the following snippet into your `playground.clj` file.
+:warning: Copy and paste the following snippet into your `playground.clj` file.
 
 ```clojure
 ; Configure your keymap/key binding to eval forms into REPL:
