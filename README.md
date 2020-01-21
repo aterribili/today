@@ -38,8 +38,8 @@ Copy and paste the following snippet into your `playground.clj` file.
 ;     {:name "pineapple", :color "BROWN"}
 ;     {:name "apple", :color "RED"}
 ;     {:name "grape", :color "PURPLE"}]
-
 (clojure.repl/find-doc "upper")
+
 
 
 
@@ -50,12 +50,16 @@ Copy and paste the following snippet into your `playground.clj` file.
 ;     {:name "grape", :color "purple"}]
 
 
+
+
 ;4 Remove bananas and red fruits
 ; Desired output
 ; [{:name "pineapple"
 ;   :color "brown"}
 ;  {:name "grape"
 ;   :color "purple"}]
+
+
 
 
 ;--------------------------------------------------------------------------
