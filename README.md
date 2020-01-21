@@ -69,7 +69,7 @@ Copy and paste the following snippet into your `playground.clj` file.
 ; -------------------------------------------------------------------------
 ; AWS API from cognitect
 (require '[cognitect.aws.client.api :as aws])
-(def client (aws/client {:api :s3}))
+(def client (aws/client {:api :s3 :region :sa-east-1}))
 (aws/ops client)
 
 
