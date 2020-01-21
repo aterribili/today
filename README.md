@@ -3,6 +3,14 @@
 Copy and paste the following snippet into your `playground.clj` file.
 
 ```clojure
+; Configure your keymap/key binding to eval forms into REPL:
+; On IntelliJ you can configure Settings > Keymap > Plugins > Cursive.
+; Usually I prefer the following keymap:
+
+; Load file in REPL: CMD + SHIFT + L
+; Send top form to REPL: CMD + SHIFT + P to evaluate parent form
+; Send form right before caret to REPL: CMD + P to evaluate the form right before the caret (cursor)
+
 ; -------------------------------------------------------------------------
 ; Lets try
 
@@ -16,35 +24,53 @@ Copy and paste the following snippet into your `playground.clj` file.
             :color "purple"}])
 
 ;1 map the coll into colors only
+; Desired output
+; => ["yellow" "brown" "red" "purple"]
+
+
+
 
 ;2 create a function that map every color in the map to upper case
+; Desired output
+; => [{:name "banana", :color "YELLOW"}
+;     {:name "pineapple", :color "BROWN"}
+;     {:name "apple", :color "RED"}
+;     {:name "grape", :color "PURPLE"}]
+
+(clojure.repl/find-doc "upper")
+
+
 
 ;3 remove all fruits that have red as their color
+; Desired output
+; => [{:name "banana", :color "yellow"} {:name "pineapple", :color "brown"} {:name "grape", :color "purple"}]
 
-;4 compose the 3 and 1 functions into coll
 
-
+;4 Remove bananas and red fruits
+; Desired output
+; [{:name "pineapple"
+;   :color "brown"}
+;  {:name "grape"
+;   :color "purple"}]
 
 
 ;--------------------------------------------------------------------------
-; Find and fix the error in the following function
+; Find and fix the error in the following function (debugging each form individually)
 
-(defn ->string-without-dash [value]
-  (def value value)
-  (cond (keyword? value) (-> value name (clojure.string/replace #"-" ""))
-        (string? value)  (clojure.string/replace value #"-" "")
-        (nil? value)     (name value)
-        :else            ""))
+(defn foo
+  [n]
+  (cond (> n 40) (+ n 20)
+        (> n 20) (- (first n) 20)
+        :else 0))
 
-(->string-without-dash nil)
-(->string-without-dash "scan-marzano")
-(->string-without-dash :scan-marzano)
-
-
+(foo 10)
+(foo 30)
 
 ; -------------------------------------------------------------------------
 ; AWS API from cognitect
-
+(require '[cognitect.aws.client.api :as aws])
+(def client (aws/client {:api :s3}))
+(aws/ops client)
 
 
 
