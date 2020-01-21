@@ -45,7 +45,9 @@ Copy and paste the following snippet into your `playground.clj` file.
 
 ;3 remove all fruits that have red as their color
 ; Desired output
-; => [{:name "banana", :color "yellow"} {:name "pineapple", :color "brown"} {:name "grape", :color "purple"}]
+; => [{:name "banana", :color "yellow"} 
+;     {:name "pineapple", :color "brown"} 
+;     {:name "grape", :color "purple"}]
 
 
 ;4 Remove bananas and red fruits
