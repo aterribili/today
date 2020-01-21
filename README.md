@@ -38,7 +38,8 @@
 ;     {:name "pineapple", :color "BROWN"}
 ;     {:name "apple", :color "RED"}
 ;     {:name "grape", :color "PURPLE"}]
-(clojure.repl/find-doc "upper")
+(comment 
+  (clojure.repl/find-doc "upper"))
 
 
 
@@ -71,14 +72,16 @@
         (> n 20) (- (first n) 20)
         :else 0))
 
-(foo 10)
-(foo 30)
+(comment
+  (foo 10)
+  (foo 30))
 
 ; -------------------------------------------------------------------------
 ; AWS API from cognitect
-(require '[cognitect.aws.client.api :as aws])
-(def client (aws/client {:api :s3 :region :sa-east-1}))
-(aws/ops client)
+(comment
+  (require '[cognitect.aws.client.api :as aws])
+  (def client (aws/client {:api :s3 :region :sa-east-1}))
+  (aws/ops client))
 
 
 
@@ -97,69 +100,4 @@
 ; Get nu-tmp/<name>/test
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
