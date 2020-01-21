@@ -10,7 +10,7 @@
 ; REPL eval 
 ; Load file in REPL: CMD + SHIFT + L
 ; Send top form to REPL: CMD + SHIFT + P to evaluate parent form
-; Send form right before caret to REPL: CMD + P to evaluate the form right before the caret (cursor)
+; Send form right before caret to REPL: CMD + P to evaluate the form right before the caret (cursor | cursora)
 ;
 ; Structural editing
 ; Add parenthesis: CMD + SHIFT + 9
