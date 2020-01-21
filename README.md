@@ -7,9 +7,15 @@
 ; On IntelliJ you can configure Settings > Keymap > Plugins > Cursive.
 ; Usually I prefer the following keymap:
 
+; REPL eval 
 ; Load file in REPL: CMD + SHIFT + L
 ; Send top form to REPL: CMD + SHIFT + P to evaluate parent form
 ; Send form right before caret to REPL: CMD + P to evaluate the form right before the caret (cursor)
+;
+; Structural editing
+; Add parenthesis: CMD + SHIFT + 9
+; Slurp forwards: CMD + SHIFT + K
+; Slurp backwards: CMD + SHIFT + J
 
 ; Remember to open your repl with credentials from the AWS BR Account
 
