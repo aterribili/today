@@ -25,14 +25,14 @@
            {:name "grape"
             :color "purple"}])
 
-;1 map the coll into colors only
+;1 Map the coll into colors only
 ; Desired output
 ; => ["yellow" "brown" "red" "purple"]
 
 
 
 
-;2 create a function that map every color in the map to upper case
+;2 Map every color in the map to upper case
 ; Desired output
 ; => [{:name "banana", :color "YELLOW"}
 ;     {:name "pineapple", :color "BROWN"}
@@ -44,7 +44,7 @@
 
 
 
-;3 remove all fruits that have red as their color
+;3 Remove all fruits that have red as their color
 ; Desired output
 ; => [{:name "banana", :color "yellow"} 
 ;     {:name "pineapple", :color "brown"} 
@@ -84,7 +84,6 @@
   (aws/ops client))
 
 
-
 ; List the objects from nu-tmp/<name>/
 
 
@@ -98,6 +97,9 @@
 
 
 ; Get nu-tmp/<name>/test
+
+
+
 
 ```
 
