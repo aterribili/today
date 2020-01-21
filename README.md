@@ -11,6 +11,8 @@ Copy and paste the following snippet into your `playground.clj` file.
 ; Send top form to REPL: CMD + SHIFT + P to evaluate parent form
 ; Send form right before caret to REPL: CMD + P to evaluate the form right before the caret (cursor)
 
+; Remember to open your repl with credentials from the AWS BR Account
+
 ; -------------------------------------------------------------------------
 ; Lets try
 
